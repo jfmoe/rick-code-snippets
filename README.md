@@ -1,5 +1,8 @@
 # Rick - Code Snippets
 
+[![Version](https://img.shields.io/visual-studio-marketplace/v/jfmoe.rick-code-snippets)](https://marketplace.visualstudio.com/items?itemName=jfmoe.rick-code-snippets)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/jfmoe.rick-code-snippets)](https://marketplace.visualstudio.com/items?itemName=jfmoe.rick-code-snippets)
+
 This extension contains code snippets for personal use for [Vs Code][code] editor.
 
 ## Supported languages (file extensions)
