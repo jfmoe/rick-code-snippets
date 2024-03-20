@@ -1,4 +1,7 @@
 {
+  /* -------------------------------------------------------------------------- */
+  /*                               Console Methods                              */
+  /* -------------------------------------------------------------------------- */
   "consoleLog": {
     "prefix": "cl",
     "body": "console.log(${1:object})",
@@ -8,5 +11,46 @@
     "prefix": "clo",
     "body": "console.log('${1:object}', ${1:object})",
     "description": "Displays an object in the console with its name"
+  },
+  /* -------------------------------------------------------------------------- */
+  /*                              Import and Export                             */
+  /* -------------------------------------------------------------------------- */
+  "importDestructing": {
+    "prefix": "imd",
+    "body": "import { $2 } from '${1:module}'$0",
+    "description": "Imports only a portion of the module in ES6 syntax"
+  },
+  "import": {
+    "prefix": "imp",
+    "body": "import ${2:moduleName} from '${1:module}'$0",
+    "description": "Imports entire module statement in ES6 syntax"
+  },
+  "importNoModuleName": {
+    "prefix": "imn",
+    "body": "import '${1:module}'$0",
+    "description": "Imports entire module in ES6 syntax without module name"
+  },
+  /* -------------------------------------------------------------------------- */
+  /*                               Various methods                              */
+  /* -------------------------------------------------------------------------- */
+  "anonymousFunction": {
+    "prefix": "anfn",
+    "body": "(${1:params}) => {\n\t${2}\n}",
+    "description": "Creates an anonymous function in ES6 syntax"
+  },
+  "namedFunction": {
+    "prefix": "nfn",
+    "body": "const ${1:name} = (${2:params}) => {\n\t${3}\n}",
+    "description": "Creates a named function in ES6 syntax"
+  },
+  "destructingObject": {
+    "prefix": "dob",
+    "body": "const {${2:propertyName}} = ${1:objectToDestruct}",
+    "description": "Creates and assigns a local variable using object destructing"
+  },
+  "destructingArray": {
+    "prefix": "dar",
+    "body": "const [${2:propertyName}] = ${1:arrayToDestruct}",
+    "description": "Creates and assigns a local variable using array destructing"
   },
 }

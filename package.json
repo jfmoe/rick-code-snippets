@@ -3,8 +3,9 @@
   "displayName": "Rick - Code Snippets",
   "description": "Code snippets for personal use",
   "version": "0.0.1",
+  "publisher": "jfmoe",
   "icon": "images/rick-code-snippets.jpg",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "SEE LICENSE IN LICENSE",
   "repository": {
     "type": "git",
     "url": "https://github.com/jfmoe/rick-code-snippets"
