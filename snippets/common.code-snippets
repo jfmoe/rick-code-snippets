@@ -15,15 +15,15 @@
   /* -------------------------------------------------------------------------- */
   /*                              Import and Export                             */
   /* -------------------------------------------------------------------------- */
-  "importDestructing": {
-    "prefix": "imd",
-    "body": "import { $2 } from '${1:module}'$0",
-    "description": "Imports only a portion of the module in ES6 syntax"
-  },
   "import": {
     "prefix": "imp",
     "body": "import ${2:moduleName} from '${1:module}'$0",
     "description": "Imports entire module statement in ES6 syntax"
+  },
+  "importDestructing": {
+    "prefix": "imd",
+    "body": "import { $2 } from '${1:module}'$0",
+    "description": "Imports only a portion of the module in ES6 syntax"
   },
   "importNoModuleName": {
     "prefix": "imn",
@@ -31,8 +31,22 @@
     "description": "Imports entire module in ES6 syntax without module name"
   },
   /* -------------------------------------------------------------------------- */
-  /*                               Various methods                              */
+  /*                               Basic methods                              */
   /* -------------------------------------------------------------------------- */
+  "forEach": {
+    "prefix": "fre",
+    "body": [
+      "${1:first}.forEach(${2:second} => {${3:third}})"
+    ],
+    "description": "Creates a forEach statement",
+  },
+  "forOf": {
+    "prefix": "fof",
+    "body": [
+      "for(let ${1:first} of ${2:second}) {${3:third}}"
+    ],
+    "description": "Iterating over property names of iterable objects",
+  },
   "anonymousFunction": {
     "prefix": "anfn",
     "body": "(${1:params}) => {\n\t${2}\n}",
@@ -52,5 +66,20 @@
     "prefix": "dar",
     "body": "const [${2:propertyName}] = ${1:arrayToDestruct}",
     "description": "Creates and assigns a local variable using array destructing"
+  },
+  "promise": {
+    "prefix": "prom",
+    "body": [
+      "return new Promise((resolve, reject) => { ${1:first} })"
+    ],
+    "description": "Creates and returns a new Promise in the standard ES7 syntax",
+  },
+  "commentBigBlock": {
+    "prefix": "cmmb",
+    "body": [
+      "/**",
+      " * ${1:first}",
+      " */"
+    ],
   },
 }

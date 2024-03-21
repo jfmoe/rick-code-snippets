@@ -1,11 +1,12 @@
 # Rick - Code Snippets
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/jfmoe.rick-code-snippets)](https://marketplace.visualstudio.com/items?itemName=jfmoe.rick-code-snippets)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/jfmoe.rick-code-snippets)](https://marketplace.visualstudio.com/items?itemName=jfmoe.rick-code-snippets)
+<p>
+<a href="https://marketplace.visualstudio.com/items?itemName=jfmoe.rick-code-snippets" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/jfmoe.rick-code-snippets.svg?color=4d9375&amp;label=Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
+</p>
 
 This extension contains code snippets for personal use for [Vs Code][code] editor.
 
-## Supported languages (file extensions)
+## Supported languages
 
 - JavaScript (.js)
 - TypeScript (.ts)
@@ -20,16 +21,40 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 ### Common
 
-| Trigger | Content                                                                             |
-| ------: | ----------------------------------------------------------------------------------- |
-|   `cl→` | console log `console.log(object)`                                                   |
-|  `clo→` | console log object with name `console.log('object :>> ', object);`                  |
-|  `imd→` | imports only a portion of the module using destructing `import {rename} from 'fs';` |
-|  `imp→` | imports entire module `import fs from 'fs';`                                        |
-|  `imn→` | imports entire module without module name `import 'animate.css'`                    |
-| `anfn→` | creates an anonymous function `(params) => {}`                                      |
-|  `nfn→` | creates a named function `const add = (params) => {}`                               |
-|  `dob→` | destructing object syntax `const {rename} = fs`                                     |
-|  `dar→` | destructing array syntax `const [first, second] = [1,2]`                            |
+| Trigger | Content                                       |
+| ------: | --------------------------------------------- |
+|   `cl→` | `console.log(object)`                         |
+|  `clo→` | `console.log('object', object);`              |
+|  `imp→` | `import fs from 'fs';`                        |
+|  `imd→` | `import {rename} from 'fs';`                  |
+|  `imn→` | `import 'animate.css'`                        |
+| `anfn→` | `(params) => {}`                              |
+|  `nfn→` | `const add = (params) => {}`                  |
+|  `dob→` | `const {rename} = fs`                         |
+|  `dar→` | `const [first, second] = [1,2]`               |
+|  `fre→` | `arrayName.forEach(element => { }`            |
+|  `fof→` | `for(let itemName of objectName { }`          |
+| `prom→` | `return new Promise((resolve, reject) => { }` |
+| `cmmb→` | `comment block`                               |
+
+### React
+
+#### `rafce`
+
+```javascript
+const $1 = () => {
+  return <div>$0</div>
+}
+
+export default $1
+```
+
+#### `uef`
+
+```javascript
+useEffect(() => {
+  $0
+}, [])
+```
 
 [code]: https://code.visualstudio.com/

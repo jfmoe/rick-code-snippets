@@ -2,7 +2,7 @@
   "name": "rick-code-snippets",
   "displayName": "Rick - Code Snippets",
   "description": "Code snippets for personal use",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "jfmoe",
   "icon": "images/rick-code-snippets.jpg",
   "license": "SEE LICENSE IN LICENSE",
@@ -11,7 +11,7 @@
     "url": "https://github.com/jfmoe/rick-code-snippets"
   },
   "engines": {
-    "vscode": "^1.87.0"
+    "vscode": "^1.60.0"
   },
   "categories": [
     "Snippets"
@@ -41,6 +41,14 @@
       {
         "language": "vue",
         "path": "./snippets/common.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react.code-snippets"
       }
     ]
   }
