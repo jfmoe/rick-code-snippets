@@ -49,12 +49,12 @@
   },
   "anonymousFunction": {
     "prefix": "anfn",
-    "body": "(${1:params}) => {\n\t${2}\n}",
+    "body": "(${1}) => {\n\t${2}\n}",
     "description": "Creates an anonymous function in ES6 syntax"
   },
   "namedFunction": {
     "prefix": "nfn",
-    "body": "const ${1:name} = (${2:params}) => {\n\t${3}\n}",
+    "body": "const ${1:name} = (${2}) => {\n\t${3}\n}",
     "description": "Creates a named function in ES6 syntax"
   },
   "destructingObject": {
