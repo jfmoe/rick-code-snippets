@@ -30,6 +30,18 @@
     "body": "import '${1:module}'$0",
     "description": "Imports entire module in ES6 syntax without module name"
   },
+  "exportNamedFunction": {
+    "prefix": "exnfn",
+    "body": [
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = (${2}) => {",
+      "  ${3}",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system",
+  },
   /* -------------------------------------------------------------------------- */
   /*                               Basic methods                              */
   /* -------------------------------------------------------------------------- */
