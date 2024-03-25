@@ -30,8 +30,14 @@
     "body": "import '${1:module}'$0",
     "description": "Imports entire module in ES6 syntax without module name"
   },
+  "exportAs": {
+    "prefix": "exa",
+    "body": [
+      "export { ${2:default} as ${3:third} } from '${1:first}'"
+    ],
+  },
   "exportNamedFunction": {
-    "prefix": "exnfn",
+    "prefix": "ednf",
     "body": [
       "",
       "const ${1:${TM_FILENAME_BASE}} = (${2}) => {",
