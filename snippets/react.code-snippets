@@ -35,9 +35,9 @@
       "  )",
       "}",
       "",
-      "export default ${1:${TM_FILENAME_BASE}}",
+      "const styles = StyleSheet.create({})",
       "",
-      "const styles = StyleSheet.create({})"
+      "export default ${1:${TM_FILENAME_BASE}}",
     ],
   },
 }
